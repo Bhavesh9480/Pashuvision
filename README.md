@@ -1,25 +1,51 @@
-<<<<<<< HEAD
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
-
-# Run and deploy your AI Studio app
-
-This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/drive/1SdymW1xxp9-v7Ns4Y4ZprncF0izXGL3t
-
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
-=======
 # PashuVision
-A web app empowering India's veterinary field workers with AI. Instantly recognize cattle &amp; buffalo breeds from a single photo. Streamline animal registration, manage health records, and access key analytics to improve livestock data and care. Available in English &amp; Hindi.
->>>>>>> dab78e418b48fd27a7c1fd8d816d30b7c35caf57
+
+PashuVision is a web-based tool designed to assist India's veterinary field workers by using AI to instantly recognize cattle and buffalo breeds from a single photo. The platform simplifies animal registration, maintains health & ownership records, and provides easy access to animal profiles and data insights.
+
+---
+
+## ✨ Features
+
+- **AI Breed Recognition**  
+  Upload a photo to identify cattle & buffalo breed instantly.
+
+- **Animal Registration System**  
+  Capture owner details, animal characteristics, and unique ID.
+
+- **Health & Medical Records**  
+  Maintain vaccination, diseases, and medical history logs.
+
+- **Quick Lookup (Tag / Ear ID)**  
+  Instantly fetch animal details by unique identifier.
+
+- **Multilingual Support**  
+  Available in **English & Hindi** for field usability.
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|------|------------|
+| Frontend | React + TypeScript + Vite |
+| AI Model | Gemini Vision API (Google) |
+| Storage | LocalStorage / IndexedDB (Offline Support) |
+| Styling | TailwindCSS |
+| State Mgmt | Context API |
+
+---
+
+## 📦 Run Locally
+
+**Prerequisites:**  
+- Node.js >= 18
+
+```sh
+# Install dependencies
+npm install
+
+# Create environment file
+echo GEMINI_API_KEY=YOUR_API_KEY > .env.local
+
+# Start development server
+npm run dev
